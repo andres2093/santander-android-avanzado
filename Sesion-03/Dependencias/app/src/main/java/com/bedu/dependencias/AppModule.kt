@@ -16,4 +16,9 @@ object AppModule {
     @Named("String1")
     fun provideTestString1() = "This is string to inject"
 
+    @Singleton
+    @Provides
+    @Named("randomNum")
+    fun provideRandomNum() = (0..100).random().toString()
+
 }
