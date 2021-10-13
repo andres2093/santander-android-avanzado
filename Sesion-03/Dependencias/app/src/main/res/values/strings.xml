@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dependencias</string>
+    <string name="string_to_inject">String to inject</string>
+</resources>
