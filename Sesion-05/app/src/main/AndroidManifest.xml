@@ -24,6 +24,7 @@
         <activity android:name=".FacebookActivity" />
         <activity
             android:name=".SpotifyActivity"
+            android:exported="true"
             android:theme="@style/Theme.Terceros.Spotify" />
         <activity android:name=".ConektaActivity" />
 
