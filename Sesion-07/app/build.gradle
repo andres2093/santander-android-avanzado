@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -46,6 +47,10 @@ dependencies {
 
     //    MPAndroidChart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //    Shortbread
+    implementation 'com.github.matthiasrobbers:shortbread:1.4.0'
+    kapt 'com.github.matthiasrobbers:shortbread-compiler:1.4.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
