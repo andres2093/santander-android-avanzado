@@ -24,6 +24,7 @@
 
         <activity android:name=".IntentActivity" android:label="INTENTS"/>
         <activity android:name=".FaceActivity" android:label="FACES"/>
+        <activity android:name=".ModelActivity" android:label="MODELS"/>
 
         <meta-data android:name="com.google.ar.core" android:value="required" />
     </application>

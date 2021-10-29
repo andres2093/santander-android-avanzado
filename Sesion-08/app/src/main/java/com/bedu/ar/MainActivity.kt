@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnModels.setOnClickListener {
-//            val intent = Intent(this, Activity::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ModelActivity::class.java)
+            startActivity(intent)
         }
         binding.btnIntents.setOnClickListener {
             val intent = Intent(this, IntentActivity::class.java)

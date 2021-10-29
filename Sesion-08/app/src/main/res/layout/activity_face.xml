@@ -10,4 +10,19 @@
         android:layout_height="fill_parent"
         android:layout_gravity="top" />
 
+    <Button
+        android:id="@+id/btnPig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Pig" />
+
+    <Button
+        android:id="@+id/btnFox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Fox" />
+
 </RelativeLayout>

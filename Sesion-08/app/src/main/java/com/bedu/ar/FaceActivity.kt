@@ -50,10 +50,27 @@ class FaceActivity : AppCompatActivity(), GLSurfaceView.Renderer {
         val view = binding.root
         setContentView(view)
 
+        binding.btnFox.setOnClickListener {
+            earFur = "models/fox/ear_fur.png"
+            freckles = "models/fox/freckles.png"
+            noseFur = "models/fox/nose_fur.png"
+
+            surfaceView.onPause()
+            surfaceView.onResume()
+        }
+        binding.btnPig.setOnClickListener {
+            earFur = "models/pig/ear_fur.png"
+            freckles = "models/pig/freckles.png"
+            noseFur = "models/pig/nose_fur.png"
+
+            surfaceView.onPause()
+            surfaceView.onResume()
+        }
+
         surfaceView = binding.surfaceview
         displayRotationHelper = DisplayRotationHelper( /*context=*/this)
 
-// Set up renderer.
+        // Set up renderer.
         surfaceView.preserveEGLContextOnPause = true
         surfaceView.setEGLContextClientVersion(2)
         surfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0) // Alpha used for plane blending.
